@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Co2N Donation Care</title>
+    <script src="jquery.js"></script>
+    <script src=" https://code.jquery.com/jquery-3.4.1.min.js "
+        intégrité=" sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo = " crossorigin=" anonymous "></script>
+</head>
+<a href=""></a>
+
+<body>
+    <div id="menuContainer">
+        <nav id="topNavBar">
+            <div class="topNavBar_btn"><a href="#">home</a></div>
+            <div class="topNavBar_btn"><a href="who.html">who we are</a></div>
+            <div class="topNavBar_btn"><a href="#">partners</a></div>
+            <div class="topNavBar_btn"><a href="login.html">login</a></div>
+        </nav>
+    </div>
+    <div id="homeContainer">
+        <div id="homeMain_content">
+
+            <div id="video">
+                <script type="text/javascript">
+                    var slideimages = new Array();
+                    var imgsname = new Array();
+                    imgsname[0] = "img/ananas-800x400.jpg";
+                    imgsname[1] = "img/sproutsm-1-800x400-1.jpg";
+                    imgsname[2] = "img/shutterstock_737399527-800x400.jpg";
+                    imgsname[3] = "img/shutterstock_588983339-800x400.jpg";
+                    var slideshowspeed = 4000;
+                    var i = 0;
+                    var init = 1;
+
+                    slideimages[i] = new Image();
+                    slideimages[i].src = imgsname[i];
+
+                    /* Fonction principale (a integrer dans la balise body onload */
+                    function slideit() {
+
+                        if (slideimages[i].complete) {
+
+                            document.getElementById('slide').src = slideimages[i].src;
+                            i++;
+                            if (i < imgsname.length) {
+                                if (slideimages[i] == null) {
+                                    slideimages[i] = new Image();
+                                }
+                            } else {
+                                i = 0;
+                            }
+                            slideimages[i].src = imgsname[i];
+                        }
+                        setTimeout("slideit()", slideshowspeed)
+                    }
+                </script>
+            </div>
+
+            <body onLoad="slideit();return true;">
+                <div class="sl" align="center">
+                    <img src="" id="slide" />
+                </div>
+        </div>
+
+
+        <div id="homeDescription">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum incidunt minima, aperiam ex deleniti
+                neque esse alias modi beatae, eum sapiente explicabo quaerat iure optio earum, consequatur ullam ad
+                dolores. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos incidunt quia, labore, quis
+                sit optio sed iure neque provident expedita quaerat dolor ipsa repellat earum voluptas suscipit odit
+                nostrum est. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sed sunt at,
+                accusantium quos placeat omnis delectus vero consequatur ut eius quo libero cum cupiditate
+                architecto ullam incidunt esse consequuntur?</p>
+        </div>
+
+        <div id="newsContainer">
+
+            <div class="news_article">
+                <div class="news_ensemble">
+                    <img src="2626005.jpg" alt="">
+                    <h2>Dix idées écologistes pour révolutionner le 21e siècle</h2>
+                    <p>Les idéologies des 19e et 20e siècles ont fait leur temps. Il est urgent de dire au
+                        revoir à la fois au capitalisme et au productivisme, de moderniser la démocratie, et
+                        d'imaginer à quoi peut ressembler la société(...)</p>
+                </div>
+            </div>
+            <div class="news_article">
+                <div class="news_ensemble">
+                    <img src="Fotolia_119789986_Subscription_XXL-825x510.jpg" alt="">
+                    <h2>Pour réduire le réchauffement climatique, il faudrait planter 1.000 milliards d’arbres !
+                    </h2>
+                    <p>Les arbres sont notre meilleure arme pour lutter contre le changement climatique, grâce à
+                        leur capacité de stockage du CO2. (...)</p>
+                </div>
+            </div>
+            <div class="news_article">
+                <div class="news_ensemble">
+                    <img src="ecologie-solutions-825x510.jpg" alt="">
+                    <h2>L'écologie, plus que jamais une solution</h2>
+                    <p>"Les écologistes portent des propositions (…) qui permettraient de dégager des économies
+                        conséquentes. Nous les portons aujourd'hui au gouvernement et nous en sommes fiers",
+                        affirment Cécile Duflot et Pascal Canfin. Augmentation du(...)</p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <div id="funFacts">
+        <div id="funFactsTxt"></div>
+    </div>
+
+    <footer id="bottomMenu">
+        <div class="dataFooter">Partners : <span data-number="26" id="partners">26</span></div>
+        <div class="dataFooter">Contributors : <span data-number="78" id="contrib">78</span></div>
+        <div class="dataFooter">Trees planted : <span data-number="130" id="treesP">130</span></div>
+        <div class="dataFooter">Progression : <span data-number="30%" id="progress">30%</span></div>
+    </footer>
+
+    <script src="funfacts.js"></script>
+</body>
+
+</html>

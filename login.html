@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Login?</title>
+</head>
+<a href=""></a>
+
+<body>
+    <div id="menuContainer">
+        <nav id="topNavBar">
+            <div class="topNavBar_btn"><a href="Accueil.html">home</a></div>
+            <div class="topNavBar_btn"><a href="who.html">who we are</a></div>
+            <div class="topNavBar_btn"><a href="#">partners</a></div>
+            <div class="topNavBar_btn"><a href="login.html">login</a></div>
+        </nav>
+    </div>
+    <div id="homeContainer">
+        <div id="homeMain_content">
+
+            <form action="action_page.php">
+
+                <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit">Login</button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                </div>
+
+                <div class="container">
+                    <button type="button" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <div id="funFacts">
+        <div id="funFactsTxt"></div>
+    </div>
+
+    <footer id="bottomMenu">
+        <div class="dataFooter">Partners : <span data-number="26" id="partners">26</span></div>
+        <div class="dataFooter">Contributors : <span data-number="78" id="contrib">78</span></div>
+        <div class="dataFooter">Trees planted : <span data-number="130" id="treesP">130</span></div>
+        <div class="dataFooter">Progression : <span data-number="30%" id="progress">30%</span></div>
+    </footer>
+
+    <script src="funfacts.js"></script>
+</body>
+
+</html>
